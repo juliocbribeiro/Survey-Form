@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <title>Web Dev School Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Web Dev School Survey Form</h1>
+
+            <p id="description">
+                Thank you for taking the time to help us improve the plataform
+            </p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name-label" for="name" id="name-label">Name</label> <br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email-label" for="email" id="email-label">Email</label> <br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue"> (optional)</span></label> 
+                
+                <input type="number" name="age" id="number" placeholder="Age" min="10" max="99" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>How did you hear about us?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="search-engine">Search Engine</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="friend">From a friend</option>
+                    <option value="tv">TV</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is your favorite programming language?
+                </p>
+                <select id="languages" name="languages" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="python">Python</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+
+                <fieldset>
+                    <legend>What language would you like to learn next?<span class="clue">(Check all that apply) </span>
+                    </legend>
+
+
+                    <label>
+                        <input name="prefer" value="Python" type="checkbox" class="input-checkbox">Python
+                    </label><br>
+
+                    <label>
+                        <input name="prefer" value="Javascript" type="checkbox" class="input-checkbox">Javascript
+                    </label><br>
+
+                    <label>
+                        <input name="prefer" value="Java" type="checkbox" class="input-checkbox">Java
+                    </label><br>
+                    <label>
+                        <input name="prefer" value="C++" type="checkbox" class="input-checkbox">C++
+                    </label><br>
+
+                    <label>
+                        <input name="prefer" value="GoLang" type="checkbox" class="input-checkbox">GoLang
+                    </label><br>
+
+                    <label>
+                        <input name="prefer" value="C#" type="checkbox" class="input-checkbox">C#
+                    </label><br>
+
+                    <label>
+                        <input name="prefer" value="SQL" type="checkbox" class="input-checkbox">SQL
+                    </label><br>
+                    <label>
+                        <input name="prefer" value="Dart" type="checkbox" class="input-checkbox">Dart
+                    </label>
+
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend Dev School to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked="">Definitely
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2021 - Júlio Ribeiro Web Developer</p>
+    </footer>
+
+</body>
+
+</html>
